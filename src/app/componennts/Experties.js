@@ -76,7 +76,7 @@ export default function Experties() {
               <img src="/SEO.webp" alt="loading.." />
               <div className="card-body">
                 <h4 className="card-title">SEO</h4>
-                <p className="card-text">Optimizing websites for higher rankings through keyword research and content strategies.</p>
+                <p className="card-text">Optimizing websites for higher rankings through keywords research and content strategies. </p>
               </div>
             </div>
             </Tilt>

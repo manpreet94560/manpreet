@@ -14,14 +14,14 @@ export default function Experience() {
                             <h5>MERN Stack Developer</h5>
                             <h6 className='text-secondary'><i className='fw-bold text-warning'>The Skill Boost </i>
                                 (March-2024 to Present)</h6>
-                            <p className='text-secondary'>
-                                <ul className='list'>
+                            {/* <p className='text-secondary'> */}
+                                <ul className='list text-secondary'>
                                     <li>❖ Developed and maintained web applications using the MERN stack.</li>
                                     <li>❖ Collaborated with cross-functional teams to ensure smooth project delivery.</li>
                                     <li>❖ Optimized code for better performance and scalability</li>
 
                                 </ul>
-                            </p>
+                            {/* </p> */}
                         </div>
                     </div>
 
@@ -30,15 +30,15 @@ export default function Experience() {
                             <h5>MERN Stack Training</h5>
                             <h6 className='text-secondary'><i className='fw-bold text-warning'>Speed Techno Institute </i>
                                 (Sep-2023 to Feb-2024)</h6>
-                            <p className='text-secondary'>
-                                <ul className='list'>
+                            {/* <p className='text-secondary'> */}
+                                <ul className='list text-secondary'>
                                     <li>❖ Gained hands-on experience with the MERN stack during a 6-month internship. </li>
                                     <li>❖ Assisted in the development and maintenance of web applications.</li>
                                     <li>❖ Learned best practices in coding, version control, and deployment.</li>
                                 </ul>
 
 
-                            </p>
+                            {/* </p> */}
                         </div>
                     </div>
 
@@ -47,8 +47,8 @@ export default function Experience() {
                             <h5>Frontend Developer</h5>
                             <h6 className='text-secondary'><i className='fw-bold text-warning'>DexDel </i>
                                 (May-2023 to Jan-2024)</h6>
-                            <p className='text-secondary'>
-                                <ul className='list'>
+                            {/* <p className='text-secondary'> */}
+                                <ul className='list text-secondary'>
                                     <li>❖ Worked as a frontend developer for 9 months.</li>
                                     <li>❖ Designed and implemented user-friendly web pages using HTML, CSS, and JavaScript.</li>
                                     <li>❖ Worked with backend teams to integrate APIs into the frontend.                                    </li>
@@ -56,7 +56,7 @@ export default function Experience() {
                                 </ul>
 
 
-                            </p>
+                            {/* </p> */}
                         </div>
                     </div>
                 </div>

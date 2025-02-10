@@ -5,7 +5,6 @@ import Hero from './componennts/Hero';
 
 export default function Home() {
   useEffect(() => {
-    // Bootstrap JS initialization - runs only on the client side
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
 

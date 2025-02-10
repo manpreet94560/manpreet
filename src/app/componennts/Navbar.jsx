@@ -74,7 +74,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="copyright pt-5 mt-3 ps-3">
-                    Copyright ©2025 All rights reserved by Manpreet
+                    Copyright ©2025 All rights reserved 
                 </div>
             </nav>
         </>

@@ -5,21 +5,21 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Work from "./Work";
 import Contact from "./Contact";
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      easing: 'ease-in-out',
-    });
-    return () => {
-      AOS.refresh(); 
-    };
-  }, []); 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1200,
+  //     once: true,
+  //     easing: 'ease-in-out',
+  //   });
+  //   return () => {
+  //     AOS.refresh(); 
+  //   };
+  // }, []); 
 
   return (
     <>

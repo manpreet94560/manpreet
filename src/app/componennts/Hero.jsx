@@ -5,32 +5,28 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Work from "./Work";
 import Contact from "./Contact";
-import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 export default function Hero() {
   useEffect(() => {
-    // Initialize AOS with settings
     AOS.init({
       duration: 1200,
       once: true,
       easing: 'ease-in-out',
     });
-
-    // Cleanup AOS on component unmount
     return () => {
-      AOS.refresh();  // Refresh AOS when the component is unmounted
+      AOS.refresh(); 
     };
-  }, []);  // Empty dependency array ensures this effect runs once
+  }, []); 
 
   return (
     <>
       <div className="hero-section Home" id="Home">
         <img
-          src="/home.jpg"  // Ensure this is in the 'public' folder
-          alt="Dynamic website with MERN stack"  // Improved alt text for accessibility
+          src="/home.jpg"  
+          alt="Dynamic website with MERN stack" 
           className="hero-image"
         />
         <div className="hero-overlay"></div>

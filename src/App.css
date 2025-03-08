@@ -1,38 +1,377 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #ffd700;
+  --text-color: #ffffff;
+  --text-secondary: #dadada;
+  --background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-links {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: rgb(158, 158, 158);
+}
+
+.nav-link {
+  color: rgb(164, 164, 164) ;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color:#ffd700 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  
+  display: block;
+}
+
+.nav-link.active {
+  color: #ffd700; 
+}
+
+
+.newsletter-section {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.newsletter-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #333;
+  padding: 0.5rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.main-content {
+  /* margin-left: 350px; */
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000 20%, transparent 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: rem;
+  width: 100%;
+  /* max-width: 900px; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+.Home{
+  margin-left: 330px;
+}
+.hero-subtitle {
+  /* color: var(--text-secondary); */
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  color: var(--text-secondary);
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 2px white;
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover {
+  background-color: #ffe44d;
+}
+
+.container {
+  background: linear-gradient(to right, #000 20%, transparent 100%);
+}
+
+.box {
+  height: 120px;
+  width: 190px;
+  box-shadow: 0px 0px 5px 1px grey;
+  padding-top: 20px;
+}
+
+.potive {
+  background-color: #ffd700;
+  min-height: 130px;
+  width: 100%;
+
+}
+.sidebar {
+  border-right: 2px solid grey;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 350px;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: 0.3s ease;
+}
+
+.navbtn{
+  color: white;
+  width: 50px;
+  background-color: transparent;
+  position: fixed;
+  top: 20px;
+  left: 0px;
+  z-index: 100;
+
+}
+.navbtn2{
+  color: white;
+  width: 50px;
+  background-color: transparent;
+  position: fixed;
+  top: 10px;
+  left: 290px;
+  z-index: 1000;
+}
+.hide{
+  display: none;
+  z-index: 100;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 350px;
+    margin-left: -360px;
+
+  }
+
+  .main-content {
+    margin-left: 0px;
+    min-height: 100vh;
+    position: relative;
+  }
+  .hide{
+    display: block !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.progreess p {
+  padding-top: 20px;
+}
+.sidebar.open {
+  margin-left: 0px;
+}
+
+.accordion {
+  border: 1px solid grey !important;
+  background-color: black;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion.active,
+.accordion:hover {
+  background-color: #ccc;
+
+}
+
+.accordion-symbol {
+  float: right;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  overflow: hidden;
+
+  transition: max-height 0.2s ease-out;
+}
+
+.box2 {
+  min-height: 180px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.167);
+  /* border: 1px solid black; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.project {
+ border: 1px solid grey;
+  /* background-color: white; */
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.projecttext {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ffe44d,rgba(255, 255, 255, 0.806) );
+  margin-top: -300px;
+}
+.project:hover .projecttext{
+  margin-top: 0px;
+  transition: 1s;
+
+}
+.square{
+  width: 80px;
+  height: 80px;
+  background-color: rgba(128, 128, 128, 0.167);;
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.596) !important;
+} 
+a{
+  text-decoration: none !important;
+  
+}
+.box:hover {
+  animation-name: Border;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes Border {
+  0% {
+    border-top: 3px solid white;
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+    border-top: 3px solid white;
+    border-right: 3px solid #ffd700;
+  }
+
+  50% {
+    border-top: 3px solid white;
+    border-right: 3px solid #ffd700;
+    border-bottom: 3px solid white;
+  }
+
+  75% {
+    border-top: 3px solid white;
+    border-right: 3px solid #ffd700;
+    border-bottom: 3px solid white;
+    border-left: 3px solid #ffd700;
+  }
+
+  100% {
+    border-top: 3px solid white;
+    border-right: 3px solid #ffd700;
+    border-bottom: 3px solid white;
+    border-left: 3px solid #ffd700;
   }
 }
+.bg1{
+  background-image: url(./Assets/TheSkillBoost.webp);
+  background-size: cover;
+}
+.bg2{
+  background-image: url(./Assets/onlinetaxi.jpg);
+  background-size: cover;
+}
+.bg3{
+  background-image: url(./Assets/vastuananda.png);
+  background-size: cover;
+}
+.bg4{
+  background-image: url(./Assets/poorvithpharma.jpg);
+  background-size: cover;
+}
+.bg5{
+  background-image: url(./Assets/skksilai.jpg);
+  background-size: cover;
+}
+.bg6{
+  background-image: url(./Assets/tripy.jpg);
+  background-size: cover;
+}
+.project p{
+  font-size: 13px;
+}
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.accordion{
+  color: white;
+}
+.card-title{
+  color: rgb(215, 215, 215) !important;
+}
+
